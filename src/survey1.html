@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <!-- including FusionCharts core package JS files -->
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<style>
+
+.tl { position: absolute; top: 100px; left: 0; height: 400px; width: 400px;
+      background: white;}
+.tr { position: absolute; top: 100px; right: 0; height: 400px; width: 400px;
+      background: white;}
+.bl { position: absolute; bottom: 0; left: 0; height: 400px; width: 400px;
+      background: white; margin: 20px;}
+.br { position: absolute; bottom: 0; right: 0; height: 400px; width: 400px;
+      background: white; margin: 20px;}
+</style>
+    </head>
+    <h1>How much would you pay for a TV? </h1>
+    <div class="tl">
+<canvas id="chartTotal"></canvas>
+</div>
+    <div class="tr">
+
+<canvas id="chartGender"></canvas>
+</div>
+    <div class="bl">
+
+<canvas id="chartTime"></canvas>
+</div>
+    <div class="br">
+
+<canvas id="chartPlatform"></canvas>
+</div>
+
+<script src="js/responselogic.js"></script>
+</html>
+

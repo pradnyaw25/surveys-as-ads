@@ -1,0 +1,46 @@
+<html>
+    <head>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+<script src="app.js"></script>
+</script>
+    </head>
+    <body>
+      <form>
+  <div>
+    <label for="say">What is the most you would pay for a 50" TV ?
+</label>
+    <label for="price_300">$300</label>
+    <input name="price_300" type="radio" id="say" value="300">
+
+        <label for="price_350">$350</label>
+    <input name="price_350" type="radio" id="say" value="350">
+
+        <label for="price_400">$400</label>
+    <input name="price_400" type="radio" id="say" value="400">
+
+        <label for="price_450">$450</label>
+    <input name="price_450" type="radio" id="say" value="450">
+
+        <label for="price_500">$500</label>
+    <input name="price_500" type="radio" id="say" value="500">
+  </div>
+  <div>
+  </div>
+</form>
+    <button onclick="writeToDatabase({
+      surveyId: 1,
+      answer:500,
+      city:'Paris',
+      age: 23,
+      gender:'M',
+      date: '',
+      time: '',
+      ip: '',
+      platform: '',
+      os: ''
+    }
+    )">Go to Video</button>
+
+      <body>
+</html>

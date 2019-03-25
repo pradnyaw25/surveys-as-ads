@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Retina;
+  font-weight: 100;
+  src: url(//static1.dmcdn.net/neon/prod/fonts/Retina-Regular.3ffb73ee04af18a2aaa81bb96f522b42.woff2)
+      format("woff2"),
+    url(//static1.dmcdn.net/neon/prod/fonts/Retina-Regular.2ed725418e0ae29ff083117a9a830693.woff)
+      format("woff"),
+    url(//static1.dmcdn.net/neon/prod/fonts/Retina-Regular.d1beb242654bdc4b926ed5366ebf727f.ttf)
+      format("truetype"),
+    url(//static1.dmcdn.net/neon/prod/fonts/Retina-Regular.19ccc5d63bfb5f2ec8f8cdf0a280776c.otf)
+      format("opentype");
+}
+
+@font-face {
+  font-family: Retina;
+  font-weight: 500;
+  src: url(//static1.dmcdn.net/neon/prod/fonts/RetinaMedium.2802969ef9268141c2b16b2e10f69cad.woff2)
+      format("woff2"),
+    url(//static1.dmcdn.net/neon/prod/fonts/RetinaMedium.4746d23389a0366db8f7138c2a848ced.woff)
+      format("woff"),
+    url(//static1.dmcdn.net/neon/prod/fonts/RetinaMedium.dd4d083b06f910713c04c819e3e7bcda.ttf)
+      format("truetype"),
+    url(//static1.dmcdn.net/neon/prod/fonts/RetinaMedium.3b7f821dbede9f7fc08445314fd0fcae.otf)
+      format("opentype");
+}
+
+@font-face {
+  font-family: Retina;
+  font-weight: 800;
+  src: url(//static1.dmcdn.net/neon/prod/fonts/Retina-Bold.3bbf9f017650e3891393e041647f9e1e.woff2)
+      format("woff2"),
+    url(//static1.dmcdn.net/neon/prod/fonts/Retina-Bold.6cfffde6a71b85addf36b787e74e5134.woff)
+      format("woff"),
+    url(//static1.dmcdn.net/neon/prod/fonts/Retina-Bold.131bfc1958d587afdc4f88de7053599f.ttf)
+      format("truetype"),
+    url(//static1.dmcdn.net/neon/prod/fonts/Retina-Bold.e82060324acf3d6f9e8ca28de5f3da9a.otf)
+      format("opentype");
+}
+
+@font-face {
+  font-family: Retina;
+  font-weight: 900;
+  src: url(//static1.dmcdn.net/neon/prod/fonts/RetinaBlack.f4bb6486ade65bdabcb864092d372f49.woff2)
+      format("woff2"),
+    url(//static1.dmcdn.net/neon/prod/fonts/RetinaBlack.272d785ddc612740bce47aac15baa718.woff)
+      format("woff"),
+    url(//static1.dmcdn.net/neon/prod/fonts/RetinaBlack.06b33e14c656f7af2ca8fe31a5b136bf.ttf)
+      format("truetype"),
+    url(//static1.dmcdn.net/neon/prod/fonts/RetinaBlack.4392930c24f62e1f17ab2cbc9c1b4043.otf)
+      format("opentype");
+}
+
+body {
+    background-image: linear-gradient(270deg, #00d2f3, #0af);
+    color: white;
+    font-family: Retina;
+  }
+
+  button {
+  color: #0af;
+  cursor: pointer;
+  background: white;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  height: 30px;
+  width: 100px;
+  padding: 8px 10px 8px 12px;
+  transition: background-color 0.3s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:hover {
+  background-color: #f3f3f3;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #d3d3d3;
+  color: #a3a3a3;
+}
+
+.bodyDashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titleDashboard {
+
+}
+
+.linkDashboard {
+    color: white;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a {
+      color: white;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  -ms-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  &:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: $thetransition;
+  transition: $thetransition;
+  }
+  &:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  }
+
+}
